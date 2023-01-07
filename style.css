@@ -230,6 +230,7 @@ body {
     background-color: #D91807;
     right: 380px;
     top: 50%;
+    opacity: 1;
 }
 
 .prestations h2::before {
@@ -240,6 +241,7 @@ body {
     background-color: #D91807;
     left: 380px;
     top: 50%;
+    opacity: 1;
 }
 
 .presentationPropose {

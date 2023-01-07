@@ -201,18 +201,11 @@
 }
 
 .prestations h2::after {
-    content: "";
-    width: 30px;
-    height: 3.5px;
-    right: 40px;
-    top: 50%;
+    opacity: 0;
 }
 
 .prestations h2::before {
-    content: "";
-    width: 30px;
-    height: 3.5px;
-    left: 40px;
+    opacity: 0;
 }
 
 .presentationPropose {
