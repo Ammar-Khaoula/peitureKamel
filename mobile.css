@@ -1,0 +1,311 @@
+/*start header*/
+
+.header1 {
+    height: 60px;
+}
+
+.logo {
+    position: fixed;
+    left: 5px;
+}
+
+.logo img {
+    width: 80px;
+    height: 60px;
+}
+
+.links {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    right: 30px;
+    display: none;
+}
+
+.links.navactive {
+    display: inline;
+}
+
+.links ul {
+    width: 100%;
+    height: 100vh;
+    background-color: #023351;
+    position: absolute;
+}
+
+.links ul li {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    margin-left: 5px;
+    position: relative;
+    top: 50px;
+    padding: 2%;
+    border-bottom: 2px white dashed;
+}
+
+.links ul li a:hover {
+    color: white;
+}
+
+#minAcon {
+    position: fixed;
+    display: inline;
+    right: 5px;
+    top: 10px;
+    font-size: 25px;
+    border: 2px #188cd3 solid;
+    border-radius: 4px;
+    height: 35px;
+    padding: 1%;
+    color: #D91807;
+}
+
+
+/*nav*/
+
+.navbar {
+    margin-top: 80px;
+    height: 600px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info {
+    border: 2px solid #0487D9;
+    position: relative;
+    height: 350px;
+    width: 264px;
+    transform: translateX(40px);
+}
+
+@keyframes example {
+    0% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+.info img {
+    width: 260px;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.contenueInfo {
+    text-align: center;
+    position: relative;
+    top: 5px;
+    width: 100%;
+}
+
+.contenueInfo h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.contenueInfo p {
+    font-size: 18px;
+    color: black;
+    opacity: .7;
+}
+
+.contenueInfo button {
+    border-radius: 20px;
+    width: 220px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.contenueInfo button a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenueInfo button:hover {
+    background: linear-gradient(to right, #D91807, #0487D9);
+}
+
+.spike {
+    position: relative;
+    top: 40px;
+}
+
+.spike::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
+    background-size: 30px 30px;
+}
+
+
+/*---------section1-----*/
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 10px;
+    min-height: 50vh;
+    padding-top: 30px;
+}
+
+.presentation {
+    width: 70%;
+}
+
+.presentation p {
+    font-size: 16px;
+    padding-top: 25px;
+}
+
+.presentation p span {
+    font-size: 18px;
+}
+
+.presentationImg {
+    width: 25%;
+}
+
+.presentationImg img {
+    width: 100px;
+    height: 300px;
+    position: relative;
+    top: 35px;
+}
+
+
+/*---------section-----*/
+
+.prestations {
+    min-height: 65vh;
+}
+
+.prestations h2 {
+    padding: 15px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.prestations h2::after {
+    content: "";
+    width: 30px;
+    height: 3.5px;
+    right: 40px;
+    top: 50%;
+}
+
+.prestations h2::before {
+    content: "";
+    width: 30px;
+    height: 3.5px;
+    left: 40px;
+}
+
+.presentationPropose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prePro {
+    width: 50%;
+    padding: 10px;
+}
+
+.prePro img {
+    width: 130px;
+    height: 130px;
+    transform: scale(1);
+}
+
+.prePro img:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 1px 4px 2px rgb(250, 194, 194);
+}
+
+.prePro h4 {
+    font-size: 14px;
+    position: relative;
+    right: 10px;
+}
+
+
+/*---------section2-----*/
+
+.section2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 45px;
+}
+
+.infoDevi {
+    width: 30%;
+    margin: 10px;
+}
+
+.infoDevi i {
+    color: #e6e8e9;
+    font-size: 20px;
+}
+
+.infoDevi h3 {
+    color: #D91807;
+    font-size: 18px;
+}
+
+.infoDevi p {
+    font-size: 14px;
+}
+
+
+/*---------------footer-----------*/
+
+footer {
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer img {
+    width: 80px;
+    height: 70px;
+}
+
+.footer ul li {
+    font-size: 12px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.adress h3 {
+    color: #D91807;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.lieu a {
+    letter-spacing: 1px;
+}
+
+.btnAppel {
+    opacity: 1;
+}

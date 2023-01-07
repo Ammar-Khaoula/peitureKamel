@@ -1,0 +1,386 @@
+/*start global*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/*End global*/
+
+
+/*start header*/
+
+#minAcon {
+    display: none;
+}
+
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    background: white;
+    box-shadow: 1px 2px 4px 2px rgb(124, 124, 124);
+}
+
+.logo img {
+    width: 120px;
+    height: 80px;
+}
+
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #D91807;
+}
+
+.links ul li a:active,
+ :focus {
+    text-decoration: underline;
+}
+
+.links ul li a:hover {
+    color: #0487D9;
+}
+
+#home a {
+    color: #D91807;
+}
+
+
+/*nav*/
+
+.navbar {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 420px;
+}
+
+.info {
+    border: 3px solid #0487D9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #c8e9fd;
+    transform: translateX(0px);
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    height: 350px;
+}
+
+@keyframes example {
+    0% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translateX(40px);
+    }
+}
+
+.info img {
+    width: 300px;
+    height: 230px;
+}
+
+.info p {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.info p i {
+    color: #D91807;
+    font-size: 20px;
+}
+
+.info span {
+    color: #75858f;
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+}
+
+.contenueInfo {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    width: 50%;
+}
+
+.contenueInfo h3 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    color: #0487D9;
+}
+
+.contenueInfo p {
+    font-size: 25px;
+    color: black;
+    opacity: .7;
+}
+
+.contenueInfo button {
+    border: 0px solid black;
+    border-radius: 25px;
+    background: linear-gradient(to right, #0487D9, #D91807);
+    width: 220px;
+    height: 50px;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bolder;
+    position: relative;
+    top: 50px;
+}
+
+.contenueInfo button a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenueInfo button:hover {
+    background: linear-gradient(to right, #D91807, #0487D9);
+}
+
+.spike {
+    position: relative;
+    top: 40px;
+}
+
+.spike::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
+    background-size: 30px 30px;
+}
+
+
+/*---------section1-----*/
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    background: #0487D9;
+    margin-top: 40px;
+    padding: 30px;
+    min-height: 90vh;
+    padding-top: 80px;
+}
+
+.presentation {
+    width: 50%;
+}
+
+.presentation p {
+    font-size: 23px;
+    padding-top: 35px;
+    color: rgb(220, 218, 218);
+}
+
+.presentation p span {
+    color: #D91807;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/*---------section-----*/
+
+.prestations {
+    min-height: 100vh;
+}
+
+.prestations h2 {
+    text-align: center;
+    padding: 30px;
+    font-size: 32px;
+    color: #0487D9;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.prestations h2::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    background-color: #D91807;
+    right: 380px;
+    top: 50%;
+}
+
+.prestations h2::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    background-color: #D91807;
+    left: 380px;
+    top: 50%;
+}
+
+.presentationPropose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prePro {
+    width: 30%;
+    padding: 30px;
+}
+
+.prePro img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 2px solid #D91807;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.prePro img:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 1px 4px 2px rgb(250, 194, 194);
+}
+
+.prePro h4 {
+    color: #0487D9;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    right: 35px;
+}
+
+
+/*---------section2-----*/
+
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    background: #0487D9;
+    margin-bottom: 20px;
+    min-height: 400px;
+    position: relative;
+    bottom: 10px;
+    padding-top: 85px;
+}
+
+.infoDevi {
+    width: 25%;
+    text-align: center;
+    margin: 20px;
+    color: rgb(217, 213, 213);
+}
+
+.infoDevi i {
+    color: #e6e8e9;
+    font-size: 35px;
+}
+
+.infoDevi h3 {
+    color: #D91807;
+    font-size: 28px;
+}
+
+.infoDevi p {
+    font-size: 20px;
+}
+
+
+/*---------------footer-----------*/
+
+footer {
+    padding-top: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer img {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #b9def5;
+}
+
+.footer ul li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    letter-spacing: 2px;
+}
+
+.adress h3 {
+    color: #D91807;
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 20px;
+    border-bottom: dashed rgb(116, 113, 113);
+}
+
+#color {
+    color: #0487D9;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #0487D9;
+}
+
+.lieu {
+    text-align: center;
+    background: #f6f8f6;
+}
+
+.lieu a {
+    color: rgb(38, 38, 38);
+    letter-spacing: 3px;
+}
+
+.btnAppel {
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.btnAppel a {
+    text-decoration: none;
+}
+
+.btnAppel a i {
+    font-size: 30px;
+    color: rgb(45, 249, 123);
+    border-radius: 50%;
+}
