@@ -72,7 +72,7 @@ body {
     display: flex;
     justify-content: space-around;
     position: relative;
-    height: 420px;
+    min-height: 420px;
 }
 
 .info {
@@ -188,10 +188,15 @@ body {
     padding: 30px;
     min-height: 90vh;
     padding-top: 80px;
+    width: 100%;
 }
 
 .presentation {
-    width: 50%;
+    width: 60%;
+}
+
+.presentationImg {
+    width: 30%;
 }
 
 .presentation p {
@@ -211,6 +216,7 @@ body {
 
 .prestations {
     min-height: 100vh;
+    width: 100%;
 }
 
 .prestations h2 {
@@ -220,28 +226,6 @@ body {
     color: #0487D9;
     letter-spacing: 3px;
     position: relative;
-}
-
-.prestations h2::after {
-    content: "";
-    position: absolute;
-    width: 45px;
-    height: 5px;
-    background-color: #D91807;
-    right: 380px;
-    top: 50%;
-    opacity: 1;
-}
-
-.prestations h2::before {
-    content: "";
-    position: absolute;
-    width: 45px;
-    height: 5px;
-    background-color: #D91807;
-    left: 380px;
-    top: 50%;
-    opacity: 1;
 }
 
 .presentationPropose {
@@ -372,7 +356,7 @@ footer {
 .btnAppel {
     position: fixed;
     bottom: 55px;
-    right: 15px;
+    right: 20px;
     z-index: 2;
     opacity: 0;
 }

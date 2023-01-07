@@ -69,7 +69,6 @@
 
 .navbar {
     margin-top: 80px;
-    height: 600px;
     flex-direction: column;
     width: 100%;
 }
@@ -163,10 +162,6 @@
     padding-top: 30px;
 }
 
-.presentation {
-    width: 70%;
-}
-
 .presentation p {
     font-size: 16px;
     padding-top: 25px;
@@ -198,14 +193,6 @@
     padding: 15px;
     font-size: 22px;
     letter-spacing: 1px;
-}
-
-.prestations h2::after {
-    opacity: 0;
-}
-
-.prestations h2::before {
-    opacity: 0;
 }
 
 .presentationPropose {
